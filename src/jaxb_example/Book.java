@@ -3,7 +3,7 @@ package jaxb_example;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement
+@XmlRootElement(name = "libro")
 public class Book {
 
     private String name;
@@ -11,7 +11,17 @@ public class Book {
     private String publisher;
     private String isbn;
 
-    @XmlElement(name = "title")
+    public Book(String name, String author, String publisher, String isbn) {
+        this.name = name;
+        this.author = author;
+        this.publisher = publisher;
+        this.isbn = isbn;
+    }
+
+    public Book() {
+    }
+    
+    @XmlElement(name = "titolo")
     public String getName() {
         return name;
     }
@@ -20,7 +30,7 @@ public class Book {
         this.name = name;
     }
 
-    @XmlElement
+    @XmlElement(name = "autore")
     public String getAuthor() {
         return author;
     }
@@ -29,7 +39,7 @@ public class Book {
         this.author = author;
     }
 
-    @XmlElement
+    @XmlElement(name = "editore")
     public String getPublisher() {
         return publisher;
     }
@@ -38,7 +48,7 @@ public class Book {
         this.publisher = publisher;
     }
 
-    @XmlElement
+    @XmlElement(name = "ISBN")
     public String getIsbn() {
         return isbn;
     }

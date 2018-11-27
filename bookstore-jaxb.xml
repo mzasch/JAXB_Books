@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Libreria>
+    <libro>
+        <autore>Neil Strauss</autore>
+        <ISBN>978-0060554736</ISBN>
+        <titolo>The Game</titolo>
+        <editore>Harpercollins</editore>
+    </libro>
+    <libro>
+        <autore>John R. R. Tolkien</autore>
+        <ISBN>978-3832180577</ISBN>
+        <titolo>Lord of the rings</titolo>
+        <editore>Mondadori</editore>
+    </libro>
+    <location>Frankfurt Airport</location>
+    <name>Michele Caceffo</name>
+</Libreria>

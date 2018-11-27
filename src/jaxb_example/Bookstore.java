@@ -12,21 +12,21 @@ import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 
 //This statement means that class "Bookstore.java" is the root-element of our example
-@XmlRootElement
+@XmlRootElement(name = "Libreria")
 public class Bookstore {
 
     // XmlElement sets the name of the entities
-    @XmlElement(name = "book")
+    @XmlElement(name = "libro")
     private ArrayList<Book> bookList;
     private String name;
     private String location;
 
-    public void setBookList(ArrayList<Book> bookList) {
-        this.bookList = bookList;
-    }
-
     public ArrayList<Book> getBooksList() {
         return bookList;
+    }
+    
+    public void setBookList(ArrayList<Book> bookList) {
+        this.bookList = bookList;
     }
 
     public String getName() {
